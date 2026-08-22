@@ -58,6 +58,15 @@
     <screenBrightnessRampSlowDecrease>0.0167</screenBrightnessRampSlowDecrease>
     <screenBrightnessRampSlowIncrease>0.4</screenBrightnessRampSlowIncrease>
     <screenBrightnessRampIncreaseMaxMillis>750</screenBrightnessRampIncreaseMaxMillis>
+    <screenBrightnessRampDecreaseMaxMillis>750</screenBrightnessRampDecreaseMaxMillis>
+
+    <!-- Faster ambient lux convergence when darkening (AOSP default: 10000/2000ms) -->
+    <ambientLightHorizonLong>5000</ambientLightHorizonLong>
+    <ambientLightHorizonShort>1000</ambientLightHorizonShort>
+    <autoBrightness enabled="true">
+        <darkeningLightDebounceMillis>2000</darkeningLightDebounceMillis>
+    </autoBrightness>
+
     <perceptionMap>
         <perceptionPoint brightness="0" perception="0"/>
         <perceptionPoint brightness="0.01" perception="0.17320508"/>
